@@ -1,0 +1,89 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "881910d0-5a86-41d0-856d-d1bf2648669f")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 55.88 71.12)
+		(size 62.23 60.96)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "752b2b17-d4ef-44d5-a644-06ce1b2ff905")
+		(property "Sheetname" "Thermal Energy Harvesting Chain"
+			(at 55.88 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "subsheets/harvest.kicad_sch"
+			(at 55.88 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "earworm_hardware"
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 217.17 72.39)
+		(size 44.45 48.26)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "775ed5aa-f2a7-4007-b181-21772bd09852")
+		(property "Sheetname" "nRF54L15 RFSoC"
+			(at 217.17 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "subsheets/rfsoc.kicad_sch"
+			(at 217.17 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "earworm_hardware"
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
