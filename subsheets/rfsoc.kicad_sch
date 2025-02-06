@@ -5,7 +5,7 @@
 	(uuid "202c21b7-9146-475e-91c1-a43f436cb558")
 	(paper "A4")
 	(lib_symbols
-		(symbol "PCM_nordic-lib-kicad-nrf54l:nRF54L15-QFXX"
+		(symbol "earworm:nRF54L15-QFXX"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -28,7 +28,7 @@
 				)
 			)
 			(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm"
-				(at 0 -5.08 0)
+				(at 0 -73.66 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -37,7 +37,7 @@
 				)
 			)
 			(property "Datasheet" "https://docs.nordicsemi.com/bundle/ps_nrf54L15"
-				(at -27.94 15.24 0)
+				(at 0 -76.2 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -46,7 +46,7 @@
 				)
 			)
 			(property "Description" "nRF54L Dual Core Multiprotocol BLE SoC"
-				(at 0 -5.08 0)
+				(at 0 -71.12 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1117,7 +1117,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_nordic-lib-kicad-nrf54l:nRF54L15-QFXX")
+		(lib_id "earworm:nRF54L15-QFXX")
 		(at 147.32 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1145,7 +1145,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm"
-			(at 147.32 106.68 0)
+			(at 147.32 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1154,7 +1154,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.nordicsemi.com/bundle/ps_nrf54L15"
-			(at 119.38 86.36 0)
+			(at 147.32 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1163,7 +1163,7 @@
 			)
 		)
 		(property "Description" "nRF54L Dual Core Multiprotocol BLE SoC"
-			(at 147.32 106.68 0)
+			(at 147.32 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
