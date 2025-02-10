@@ -1,0 +1,3 @@
+# Prebuilt accelerometer libraries for each of our sensors
+adafruit-circuitpython-lsm6ds
+
