@@ -107,28 +107,28 @@ _STATUS_FIFO_OVER_RUN                               = 0b1
 _STATUS_FIFO_WATER_MARK_SHIFT                       = 2
 _STATUS_FIFO_WATER_MARK_MASK                        = 0b1
 _STATUS_FIFO_WATER_MARK_REACHED                     = 0b1
-               
+
 _STATUS_FIFO_READY_SHIFT                            = 1
 _STATUS_FIFO_READY_MASK                             = 0b1
 _STATUS_FIFO_READY                                  = 0b1
-               
+
 _STATUS_DATA_READY_SHIFT                            = 0
 _STATUS_DATA_READY_MASK                             = 0b1
 _STATUS_DATA_READY                                  = 0b1
-             
-# _XDATA_H bitfields               
+
+# _XDATA_H bitfields
 _XDATA_H_XDATA_SHIFT                                = 0
 _XDATA_H_XDATA_MASK                                 = 0b11111111
-               
-# _XDATA_L bitfields               
+
+# _XDATA_L bitfields
 _XDATA_L_XDATA_SHIFT                                = 2
 _XDATA_L_XDATA_MASK                                 = 0b11111
-               
-# _YDATA_H bitfields               
+
+# _YDATA_H bitfields
 _YDATA_H_YDATA_SHIFT                                = 0
 _YDATA_H_YDATA_MASK                                 = 0b11111111
-               
-# _YDATA_L bitfields               
+
+# _YDATA_L bitfields
 _YDATA_L_YDATA_SHIFT                                = 2
 _YDATA_L_YDATA_MASK                                 = 0b11111
                
@@ -272,6 +272,11 @@ class ADXL367:
     def setRange(self, range):
         bus.write_byte_data(self.address, _ADXL367_FILTER_CTL, range)
 
+    def readDataReady(self):
+        status = bus.read_byte_data(self.address, _ADXL367_STATUS)
+        ready = (status >> _ADXL367_STATUS_DATA_READY_SHIFT) & _ADXL367_STATUS_DATA_READY_MASK
+        return ready
+
     def twosComplement(self, num):
     # If the sign bit is set (bit 15), adjust the value to negative using two's complement
         if (num & 0x2000):  # Check if the sign bit is set
@@ -325,13 +330,14 @@ class ADXL367:
 
         # Collect data for 'num_samples' samples
         for i in range(num_samples):
-            axes = self.getAxes(True)  # Get axes data in g-force (True)
-            data_x.append(axes['x'])
-            data_y.append(axes['y'])
-            data_z.append(axes['z'])
+            if (self.readDataReady):
+                axes = self.getAxes(True)  # Get axes data in g-force (True)
+                data_x.append(axes['x'])
+                data_y.append(axes['y'])
+                data_z.append(axes['z'])
 
             # Sleep for the time interval based on the sampling rate
-            sleep(1 / Fs)
+            #sleep(1 / Fs)
 
         # Store the data in a dictionary
         data = {
