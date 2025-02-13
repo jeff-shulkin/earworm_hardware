@@ -18,7 +18,7 @@
 import sys
 sys.path.append("../..") # set system path to top
 
-from DFRobot_LIS2DW12 import *
+from lib.DFRobot_LIS2DW12 import *
 import time
 
 #If you want to use SPI to drive this module, uncomment the codes below, and connect the module with Raspberry Pi via SPI port

@@ -235,7 +235,7 @@ _POWER_CTL_MEASURE_MEASUREMENT                      = 0b10
 
 # ADXL367 constants
 EARTH_GRAVITY_MS2   = 9.80665
-SCALE_MULTIPLIER    = 2.0 / 16384
+SCALE_MULTIPLIER    = 2.0 / 8192
 
 ADXL367_ODR_FS = {
     _FILTER_CTL_ODR_12_5: 12.5,
@@ -252,29 +252,39 @@ class ADXL367:
 
     def __init__(self, address = 0x53):
         self.address = address
+        self.setNoiseMode(_POWER_CTL_NOISE_LOW_NOISE)
         self.setBandwidthRate(_FILTER_CTL_ODR_50)
         self.setRange(_FILTER_CTL_RANGE_2G)
         self.enableMeasurement()
 
     # set the accelerometer into standby mode
     def enableStandby(self):
-        bus.write_byte_data(self.address, _ADXL367_POWER_CTL, _POWER_CTL_MEASURE_STANDBY)
+        STANDBY_VAL = np.uint8(_POWER_CTL_MEASURE_STANDBY << _POWER_CTL_MEASURE_STANDBY_SHIFT)
+        bus.write_byte_data(self.address, _ADXL367_POWER_CTL, STANDBY_VAL)
 
     # set the accelerometer into measurement mode
     def enableMeasurement(self):
-        bus.write_byte_data(self.address, _ADXL367_POWER_CTL, _POWER_CTL_MEASURE_MEASUREMENT)
+        MEASUREMENT_VAL = np.uint8(_POWER_CTL_MEASURE_MEASUREMENT << _POWER_CTL_MEASURE_SHIFT)
+        bus.write_byte_data(self.address, _ADXL367_POWER_CTL, MEASUREMENT_VAL)
+
+    def setNoiseMode(self, mode):
+        MODE_VAL = np.uint8(mode << _POWER_CTL_NOISE_SHIFT)
+        bus.write_byte_data(self.address, _ADXL367_POWER_CTL, MODE_VAL)
 
     # set the accelerometer bandwidth
     def setBandwidthRate(self, bw):
+        BW_VAL = np.uint8(bw << _FILTER_CTL_ODR_SHIFT)
         bus.write_byte_data(self.address, _ADXL367_FILTER_CTL, bw)
 
     # set the measurement range for 10-bit readings
     def setRange(self, range):
-        bus.write_byte_data(self.address, _ADXL367_FILTER_CTL, range)
+        RANGE_VAL = np.uint8(range << _FILTER_CTL_RANGE_SHIFT)
+        bus.write_byte_data(self.address, _ADXL367_FILTER_CTL, RANGE_VAL)
 
     def readDataReady(self):
         status = bus.read_byte_data(self.address, _ADXL367_STATUS)
-        ready = (status >> _ADXL367_STATUS_DATA_READY_SHIFT) & _ADXL367_STATUS_DATA_READY_MASK
+        #print("DEBUG: STATUS REG: {:08b}".format(status))
+        ready = (status >> _STATUS_DATA_READY_SHIFT) & _STATUS_DATA_READY_MASK
         return ready
 
     def twosComplement(self, num):
@@ -288,26 +298,35 @@ class ADXL367:
 
     def readX(self):
         # Obtain raw x value
-        XDATA_ADJUSTMENT_SHIFT = 5
+        XDATA_ADJUSTMENT_SHIFT = 6
         xdata_high = bus.read_byte_data(self.address, _ADXL367_XDATA_H)
         xdata_low = bus.read_byte_data(self.address, _ADXL367_XDATA_L)
         xdata_raw = (xdata_high << XDATA_ADJUSTMENT_SHIFT) | (xdata_low >> _XDATA_L_XDATA_SHIFT)
+#        print(f"Raw X data before conversion: {xdata_raw}")
+#        new = self.convertData(xdata_raw)
+#        print(f"X data after twosComplement: {self.twosComplement(xdata_raw)}")
         return self.convertData(xdata_raw)
 
     def readY(self):
         # Obtain raw y value
-        YDATA_ADJUSTMENT_SHIFT = 5
+        YDATA_ADJUSTMENT_SHIFT = 6
         ydata_high = bus.read_byte_data(self.address, _ADXL367_YDATA_H)
         ydata_low = bus.read_byte_data(self.address, _ADXL367_YDATA_L)
         ydata_raw = (ydata_high << YDATA_ADJUSTMENT_SHIFT) | (ydata_low >> _YDATA_L_YDATA_SHIFT)
+#        print(f"Raw Y data before conversion: {ydata_raw}")
+#        new = self.convertData(ydata_raw)
+#        print(f"Y data after twosComplement: {self.twosComplement(ydata_raw)}")
         return self.convertData(ydata_raw)
 
     def readZ(self):
         # Obtain raw z value
-        ZDATA_ADJUSTMENT_SHIFT = 5
+        ZDATA_ADJUSTMENT_SHIFT = 6
         zdata_high = bus.read_byte_data(self.address, _ADXL367_ZDATA_H)
         zdata_low = bus.read_byte_data(self.address, _ADXL367_ZDATA_L)
         zdata_raw = (zdata_high << ZDATA_ADJUSTMENT_SHIFT) | (zdata_low >> _ZDATA_L_ZDATA_SHIFT)
+#        print(f"Raw Z data before conversion: {zdata_raw}")
+#        new = self.convertData(zdata_raw)
+#        print(f"Z data after twosComplement: {self.twosComplement(zdata_raw)}")
         return self.convertData(zdata_raw)
 
     def getAxes(self, gforce = False):
@@ -330,14 +349,14 @@ class ADXL367:
 
         # Collect data for 'num_samples' samples
         for i in range(num_samples):
-            if (self.readDataReady):
+            if (self.readDataReady()):
                 axes = self.getAxes(True)  # Get axes data in g-force (True)
                 data_x.append(axes['x'])
                 data_y.append(axes['y'])
                 data_z.append(axes['z'])
 
             # Sleep for the time interval based on the sampling rate
-            #sleep(1 / Fs)
+            sleep(1 / Fs)
 
         # Store the data in a dictionary
         data = {
@@ -424,22 +443,22 @@ def timedCap():
     adxl367 = ADXL367()
 
     print("Starting Data Capture...")
-    #while True:
-    #    axes = adxl367.getAxes(True)
-    #    print("ADXL367 on address 0x%x:" % (adxl367.address))
-    #    print("   x = %.3fG" % ( axes['x'] ))
-    #    print("   y = %.3fG" % ( axes['y'] ))
-    #    print("   z = %.3fG" % ( axes['z'] ))
+#    while True:
+#        if (adxl367.readDataReady()):
+#            axes = adxl367.getAxes(True)
+#            print("ADXL367 on address 0x%x:" % (adxl367.address))
+#            print("x = %.3fG" % ( axes['x'] ))
+#            print("y = %.3fG" % ( axes['y'] ))
+#            print("z = %.3fG" % ( axes['z'] ))
 
     data['Fs'] = ADXL367_ODR_FS[_FILTER_CTL_ODR_50]
-    print("DEBUG: Fs = %s" % ADXL367_ODR_FS[_FILTER_CTL_ODR_50])
     data['sData'] = {}
     data['sData'] = adxl367.recordData(Fs)
 
     print("Finished Data Capture...")
 
     plot_timeseries(data['sData'], Fs)
-    print(f"Recorded data: {data['sData']}")
+    #print(f"Recorded data: {data['sData']}")
 
     sp.io.savemat(filename, data)
 
