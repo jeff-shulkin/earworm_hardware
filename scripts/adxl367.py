@@ -5,6 +5,7 @@ It exposes an API which is then utilized for live data plotting by accel_test.py
 
 from datetime import datetime
 import numpy as np
+import scipy as sp
 from matplotlib import pyplot as plt
 from spidev import SpiDev
 import smbus
@@ -14,15 +15,6 @@ import hdf5storage as h5
 # select the correct i2c bus for this revision of Raspberry Pi
 revision = ([l[12:-1] for l in open('/proc/cpuinfo','r').readlines() if l[:8]=="Revision"]+['0000'])[0]
 bus = smbus.SMBus(1 if int(revision, 16) >= 4 else 0)
-
-STORAGE_OPTIONS = h5.Options(
-    store_python_metadata=True,
-    matlab_compatible=True,
-    structured_numpy_ndarray_as_struct=True,
-    convert_numpy_str_to_utf16=True,
-    structs_as_dicts=True,
-)
-
 
 # ADXL367 REGISTER MAP
 
@@ -243,12 +235,12 @@ _POWER_CTL_MEASURE_MEASUREMENT                      = 0b10
 
 # ADXL367 constants
 EARTH_GRAVITY_MS2   = 9.80665
-SCALE_MULTIPLIER    = 0.004
+SCALE_MULTIPLIER    = 2.0 / 16384
 
 ADXL367_ODR_FS = {
     _FILTER_CTL_ODR_12_5: 12.5,
     _FILTER_CTL_ODR_25: 25,
-    _FILTER_CTL_ODR_50: 400,
+    _FILTER_CTL_ODR_50: 50,
     _FILTER_CTL_ODR_100: 100,
     _FILTER_CTL_ODR_200: 200,
     _FILTER_CTL_ODR_400: 400,
@@ -275,7 +267,7 @@ class ADXL367:
     # set the accelerometer bandwidth
     def setBandwidthRate(self, bw):
         bus.write_byte_data(self.address, _ADXL367_FILTER_CTL, bw)
- 
+
     # set the measurement range for 10-bit readings
     def setRange(self, range):
         bus.write_byte_data(self.address, _ADXL367_FILTER_CTL, range)
@@ -284,41 +276,72 @@ class ADXL367:
     # If the sign bit is set (bit 15), adjust the value to negative using two's complement
         if (num & 0x2000):  # Check if the sign bit is set
             num -= 0x4000   # Convert to negative value in two's complement
+        return num
 
-    def readXRaw(self):
+    def convertData(self, raw_data):
+        return self.twosComplement(np.int16(raw_data)) * SCALE_MULTIPLIER
+
+    def readX(self):
+        # Obtain raw x value
         XDATA_ADJUSTMENT_SHIFT = 5
         xdata_high = bus.read_byte_data(self.address, _ADXL367_XDATA_H)
         xdata_low = bus.read_byte_data(self.address, _ADXL367_XDATA_L)
         xdata_raw = (xdata_high << XDATA_ADJUSTMENT_SHIFT) | (xdata_low >> _XDATA_L_XDATA_SHIFT)
-        return self.twosComplement(np.int16(xdata_raw))
-    
-    def readYRaw(self):
+        return self.convertData(xdata_raw)
+
+    def readY(self):
+        # Obtain raw y value
         YDATA_ADJUSTMENT_SHIFT = 5
         ydata_high = bus.read_byte_data(self.address, _ADXL367_YDATA_H)
         ydata_low = bus.read_byte_data(self.address, _ADXL367_YDATA_L)
         ydata_raw = (ydata_high << YDATA_ADJUSTMENT_SHIFT) | (ydata_low >> _YDATA_L_YDATA_SHIFT)
-        return self.twosComplement(np.int16(ydata_raw))    
+        return self.convertData(ydata_raw)
 
-    def readZRaw(self):
+    def readZ(self):
+        # Obtain raw z value
         ZDATA_ADJUSTMENT_SHIFT = 5
         zdata_high = bus.read_byte_data(self.address, _ADXL367_ZDATA_H)
         zdata_low = bus.read_byte_data(self.address, _ADXL367_ZDATA_L)
         zdata_raw = (zdata_high << ZDATA_ADJUSTMENT_SHIFT) | (zdata_low >> _ZDATA_L_ZDATA_SHIFT)
-        return self.twosComplement(np.int16(zdata_raw))
-        
-    
+        return self.convertData(zdata_raw)
+
     def getAxes(self, gforce = False):
-        x = self.readXRaw()
-        y = self.readYRaw()
-        z = self.readZRaw()
+        x = self.readX()
+        y = self.readY()
+        z = self.readZ()
 
         return {"x": x, "y": y, "z": z}
 
-    def getMinuteOfData(self, Fs):
-        pass
+    def recordData(self, Fs):
+        # Number of samples to record based on sampling frequency (Fs)
+        num_samples = Fs * 60  # 1 minute of data
 
-        
-    
+        # Create empty lists to store the data for each axis
+        data_x = []
+        data_y = []
+        data_z = []
+
+        print(f"Recording data at {Fs} Hz for 1 minute...")
+
+        # Collect data for 'num_samples' samples
+        for i in range(num_samples):
+            axes = self.getAxes(True)  # Get axes data in g-force (True)
+            data_x.append(axes['x'])
+            data_y.append(axes['y'])
+            data_z.append(axes['z'])
+
+            # Sleep for the time interval based on the sampling rate
+            sleep(1 / Fs)
+
+        # Store the data in a dictionary
+        data = {
+            "x": data_x,
+            "y": data_y,
+            "z": data_z
+        }
+
+        return data
+
     # parameter gforce:
     #    False (default): result is returned in m/s^2
     #    True           : result is returned in gs
@@ -337,7 +360,7 @@ class ADXL367:
         if(z & (1 << 16 - 1)):
             z = z - (1<<16)
 
-        x = x * SCALE_MULTIPLIER 
+        x = x * SCALE_MULTIPLIER
         y = y * SCALE_MULTIPLIER
         z = z * SCALE_MULTIPLIER
 
@@ -351,14 +374,45 @@ class ADXL367:
         z = round(z, 4)
 
         return {"x": x, "y": y, "z": z}
-    
+
+def plot_timeseries(accel_data, sample_rate):
+    # Ensure the data is a dictionary with 'x', 'y', and 'z'
+    if not all(axis in accel_data for axis in ['x', 'y', 'z']):
+        raise ValueError("Accelerometer data must include 'x', 'y', and 'z' components.")
+
+    # Create time array based on sample_rate
+    num_samples = len(accel_data['x'])
+    time = np.arange(num_samples) / sample_rate  # Time in seconds
+
+    # Create the plot
+    plt.figure(figsize=(10, 6))
+
+    # Plot data for X, Y, and Z axes
+    plt.plot(time, accel_data['x'], label='X-Axis', color='r', linewidth=1.5)
+    plt.plot(time, accel_data['y'], label='Y-Axis', color='g', linewidth=1.5)
+    plt.plot(time, accel_data['z'], label='Z-Axis', color='b', linewidth=1.5)
+
+    # Add labels and title
+    plt.xlabel('Time [s]')
+    plt.ylabel('Acceleration [m/s² or G]')
+    plt.title('Accelerometer Time-Series Data')
+
+    # Add a legend
+    plt.legend()
+
+    # Display grid
+    plt.grid(True)
+
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
 
 def timedCap():
     # if run directly we'll just create an instance of the class and output 
     # the current readings
-
+    Fs = 50
     start_time = datetime.now().astimezone()
-    filename = "adxl367" + str(ADXL367_ODR_FS[_FILTER_CTL_ODR_50]) + start_time.strftime('-%Y-%m-%dT%H-%M-%S')
+    filename = "adxl367-" + str(ADXL367_ODR_FS[_FILTER_CTL_ODR_50]) + start_time.strftime('-%Y-%m-%dT%H-%M-%S') + '.mat'
     data = {}
 
     adxl367 = ADXL367()
@@ -372,10 +426,16 @@ def timedCap():
     #    print("   z = %.3fG" % ( axes['z'] ))
 
     data['Fs'] = ADXL367_ODR_FS[_FILTER_CTL_ODR_50]
+    print("DEBUG: Fs = %s" % ADXL367_ODR_FS[_FILTER_CTL_ODR_50])
     data['sData'] = {}
-    data['sData'] = adxl367.getMinuteOfData()
+    data['sData'] = adxl367.recordData(Fs)
 
-    h5.writes(data, filename, options=STORAGE_OPTIONS)
+    print("Finished Data Capture...")
+
+    plot_timeseries(data['sData'], Fs)
+    print(f"Recorded data: {data['sData']}")
+
+    sp.io.savemat(filename, data)
 
 if __name__ == "__main__":
     timedCap()
