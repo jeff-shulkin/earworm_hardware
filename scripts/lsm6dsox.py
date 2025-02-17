@@ -5,6 +5,7 @@ import time
 import board
 from adafruit_lsm6ds.lsm6dsox import LSM6DSOX
 from adafruit_lsm6ds import Rate, AccelRange, GyroRange
+
 def collect():
     #I2C
     i2c = board.I2C()

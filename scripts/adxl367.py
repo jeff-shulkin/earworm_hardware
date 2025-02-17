@@ -81,29 +81,29 @@ _ADXL367_TEMP_ADC_UNDER_THRESH_L                    = 0x41
 _ADXL367_TEMP_ADC_TIMER                             = 0x42
 _ADXL367_AXIS_MASK                                  = 0x43
 _ADXL367_STATUS_COPY                                = 0x44
-               
-# _STATUS bitfields               
+
+# _STATUS bitfields
 _STATUS_ERR_USER_REGS_SHIFT                         = 7
 _STATUS_ERR_USER_REGS_MASK                          = 0b1
 _STATUS_SEU_ERROR_DETECTED                          = 0b1
-               
+
 _STATUS_AWAKE_SHIFT                                 = 6
 _STATUS_AWAKE_MASK                                  = 0b1
 _STATUS_AWAKE_INACTIVE                              = 0b0
 _STATUS_AWAKE_ACTIVE                                = 0b1
-               
+
 _STATUS_INACT_SHIFT                                 = 5
 _STATUS_INACT_MASK                                  = 0b1
 _STATUS_INACT_DETECTED                              = 0b1
-               
+
 _STATUS_ACT_SHIFT                                   = 4
 _STATUS_ACT_MASK                                    = 0b1
 _STATUS_ACT_DETECTED                                = 0b1
-               
+
 _STATUS_FIFO_OVER_RUN_SHIFT                         = 3
 _STATUS_FIFO_OVER_RUN_MASK                          = 0b1
 _STATUS_FIFO_OVER_RUN                               = 0b1
-               
+
 _STATUS_FIFO_WATER_MARK_SHIFT                       = 2
 _STATUS_FIFO_WATER_MARK_MASK                        = 0b1
 _STATUS_FIFO_WATER_MARK_REACHED                     = 0b1
@@ -131,12 +131,12 @@ _YDATA_H_YDATA_MASK                                 = 0b11111111
 # _YDATA_L bitfields
 _YDATA_L_YDATA_SHIFT                                = 2
 _YDATA_L_YDATA_MASK                                 = 0b11111
-               
-# _ZDATA_H bitfields               
+
+# _ZDATA_H bitfields
 _ZDATA_H_ZDATA_SHIFT                                = 0
 _ZDATA_H_ZDATA_MASK                                 = 0b11111111
-               
-# _ZDATA_L bitfields               
+
+# _ZDATA_L bitfields
 _ZDATA_L_ZDATA_SHIFT                                = 2
 _ZDATA_L_ZDATA_MASK                                 = 0b11111
 
