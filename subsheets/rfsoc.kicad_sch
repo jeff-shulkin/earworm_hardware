@@ -2579,7 +2579,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 105.41) (xy 30.48 106.68)
+			(xy 26.67 96.52) (xy 26.67 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2849,7 +2849,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 106.68) (xy 33.02 106.68)
+			(xy 26.67 106.68) (xy 27.94 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3379,7 +3379,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 106.68) (xy 43.18 106.68)
+			(xy 35.56 106.68) (xy 43.18 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3509,16 +3509,6 @@
 		)
 		(uuid "0b277857-b518-406e-b88c-5f7251726053")
 	)
-	(text "0201\n"
-		(exclude_from_sim no)
-		(at 36.83 104.648 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0d544b02-a641-4b1d-87b8-631420ad7ef5")
-	)
 	(text "XTAL_2016\n"
 		(exclude_from_sim no)
 		(at 212.344 70.866 0)
@@ -3538,6 +3528,16 @@
 			)
 		)
 		(uuid "242eae36-3b39-478b-962d-dd793c922961")
+	)
+	(text "0201\n"
+		(exclude_from_sim no)
+		(at 36.068 102.616 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "25022eda-756a-4887-83ea-5451e603ea01")
 	)
 	(text "0201\n"
 		(exclude_from_sim no)
@@ -3618,16 +3618,6 @@
 			)
 		)
 		(uuid "60da4625-0cdf-47dc-922f-70c7442f9659")
-	)
-	(text "TODO: DETERMINE THE EXACT R3 VALUE. \nMUST BE NO GREATER THAN 100 OHMS\n"
-		(exclude_from_sim no)
-		(at 42.164 95.758 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7afbd1c6-06cb-40b9-b32e-7b7724064fce")
 	)
 	(text "0201\n"
 		(exclude_from_sim no)
@@ -4841,73 +4831,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 36.83 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "36626cc9-073b-4180-8afa-5af12a15d3c5")
-		(property "Reference" "R3"
-			(at 36.83 99.822 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10"
-			(at 36.83 102.362 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 108.458 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.83 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 36.83 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a916eab3-56c4-40a0-b76f-a481eb5fffcf")
-		)
-		(pin "2"
-			(uuid "245f4190-dbd4-4d7f-91cf-80fc453f9d56")
-		)
-		(instances
-			(project "earworm_hardware"
-				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 204.47 85.09 0)
 		(unit 1)
@@ -5646,6 +5569,75 @@
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 31.75 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79a44c6e-1c28-4506-bf9a-44d88aeb1a14")
+		(property "Reference" "FB2"
+			(at 36.83 97.5869 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 40.386 99.8729 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 108.458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 31.75 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7251684-b4f9-45bf-8a5f-c2e2e470f724")
+		)
+		(pin "2"
+			(uuid "a37a87f5-b1ee-4908-bd71-e023c25859b1")
+		)
+		(instances
+			(project "earworm_hardware"
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "FB2")
 					(unit 1)
 				)
 			)
@@ -6665,7 +6657,7 @@
 	)
 	(symbol
 		(lib_id "power:+1V0")
-		(at 30.48 105.41 0)
+		(at 26.67 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6674,7 +6666,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecf2be7b-9eae-4a4a-af31-ccaf91a77104")
 		(property "Reference" "#PWR021"
-			(at 30.48 109.22 0)
+			(at 26.67 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6683,7 +6675,7 @@
 			)
 		)
 		(property "Value" "+VCAP"
-			(at 30.48 100.33 0)
+			(at 26.67 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6691,7 +6683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 105.41 0)
+			(at 26.67 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6700,7 +6692,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 105.41 0)
+			(at 26.67 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6709,7 +6701,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 30.48 105.41 0)
+			(at 26.67 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
