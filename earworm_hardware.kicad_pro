@@ -430,7 +430,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "earworm"
+    ]
   },
   "meta": {
     "filename": "earworm_hardware.kicad_pro",

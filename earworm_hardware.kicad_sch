@@ -5,8 +5,28 @@
 	(uuid "881910d0-5a86-41d0-856d-d1bf2648669f")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 148.59 83.82) (xy 168.91 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8b37aa-e1df-45e3-81ec-de9d9bb58890")
+	)
+	(wire
+		(pts
+			(xy 148.59 92.71) (xy 168.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faea3979-0f92-4eb1-94ef-a0663e7d156d")
+	)
 	(sheet
-		(at 55.88 71.12)
+		(at 86.36 63.5)
 		(size 62.23 60.96)
 		(fields_autoplaced yes)
 		(stroke
@@ -18,7 +38,7 @@
 		)
 		(uuid "752b2b17-d4ef-44d5-a644-06ce1b2ff905")
 		(property "Sheetname" "Thermal Energy Harvesting Chain"
-			(at 55.88 70.4084 0)
+			(at 86.36 62.7884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,13 +47,33 @@
 			)
 		)
 		(property "Sheetfile" "subsheets/harvest.kicad_sch"
-			(at 55.88 132.6646 0)
+			(at 86.36 125.0446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "VSTORE" input
+			(at 148.59 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e1cfe292-ef88-41ae-ae18-45c9b58d5446")
+		)
+		(pin "LTC_PWR" input
+			(at 148.59 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "821ccbc4-795c-496e-8d20-96fadf07c7ff")
 		)
 		(instances
 			(project "earworm_hardware"
@@ -44,7 +84,7 @@
 		)
 	)
 	(sheet
-		(at 217.17 72.39)
+		(at 168.91 71.12)
 		(size 44.45 48.26)
 		(fields_autoplaced yes)
 		(stroke
@@ -56,7 +96,7 @@
 		)
 		(uuid "775ed5aa-f2a7-4007-b181-21772bd09852")
 		(property "Sheetname" "nRF54L15 RFSoC"
-			(at 217.17 71.6784 0)
+			(at 168.91 70.4084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65,13 +105,33 @@
 			)
 		)
 		(property "Sheetfile" "subsheets/rfsoc.kicad_sch"
-			(at 217.17 121.2346 0)
+			(at 168.91 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "VSTORE" input
+			(at 168.91 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4db3e95d-7fce-4dd6-ac2a-c153d45813c5")
+		)
+		(pin "LTC_PWR" input
+			(at 168.91 92.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6d1c4525-0ba1-43e4-9e09-0edaf4ca6764")
 		)
 		(instances
 			(project "earworm_hardware"
