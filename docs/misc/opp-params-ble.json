@@ -1,0 +1,18 @@
+{
+  "chip": "14",
+  "voltage": "2.4",
+  "dcdc": "on",
+  "lf_clock": "lfxo",
+  "radio_tx": "0",
+  "ble_type": "con",
+  "ble_int": "2000",
+  "tx_size": "251",
+  "rx_size": "0",
+  "dle": "on",
+  "event_length_ext": "on",
+  "phy": "2mbps",
+  "pdu_size": "251",
+  "slave_latency": "0",
+  "central_ppm": "20",
+  "peripheral_ppm": "20"
+}
