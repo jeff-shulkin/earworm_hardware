@@ -78,7 +78,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f"
-					(page "2")
+					(page "3")
 				)
 			)
 		)
@@ -136,7 +136,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f"
-					(page "3")
+					(page "2")
 				)
 			)
 		)

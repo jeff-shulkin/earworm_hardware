@@ -525,6 +525,174 @@
 				)
 			)
 		)
+		(symbol "Device:Crystal"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Crystal"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Two pin crystal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_0_1"
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -1.27) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016) hide)
@@ -2936,6 +3104,12 @@
 		(uuid "0873f65c-4983-477c-8372-ccc969d616a4")
 	)
 	(junction
+		(at 102.87 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1196d54f-6b08-4a13-b83c-c1832f79db72")
+	)
+	(junction
 		(at 242.57 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2978,7 +3152,7 @@
 		(uuid "322f85e9-ac35-4a33-b3e8-198f63b42683")
 	)
 	(junction
-		(at 128.27 24.13)
+		(at 115.57 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44413650-ada3-4bdd-b372-afeeb1ceef0d")
@@ -2996,7 +3170,7 @@
 		(uuid "57fe8bca-b597-4d1e-ac5f-7b77cb7da5ee")
 	)
 	(junction
-		(at 140.97 24.13)
+		(at 128.27 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58ef3946-1e57-4c5c-952e-102799e4e136")
@@ -3008,7 +3182,7 @@
 		(uuid "58f0586a-ce13-4367-b087-7313c48c01e3")
 	)
 	(junction
-		(at 110.49 24.13)
+		(at 97.79 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "779431b0-ebfa-4dc8-9b44-a53532d16db1")
@@ -3018,6 +3192,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e1f2dbb-acf5-4e06-957d-ada504f04f43")
+	)
+	(junction
+		(at 115.57 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c326c52-cac2-4292-8544-2b8b841e2f01")
 	)
 	(junction
 		(at 227.33 140.97)
@@ -3032,16 +3212,10 @@
 		(uuid "a9501ea0-337b-495b-835f-f6cffa42df78")
 	)
 	(junction
-		(at 115.57 24.13)
+		(at 102.87 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c70dab45-f7ef-4a8d-96ab-1488f09ce7bb")
-	)
-	(junction
-		(at 128.27 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ca212253-c07a-4bff-b0cb-41ba89fc865a")
 	)
 	(junction
 		(at 255.27 80.01)
@@ -3068,12 +3242,6 @@
 		(uuid "f3af7235-3178-48dd-b906-69686bc538f1")
 	)
 	(junction
-		(at 115.57 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f4694561-31f8-419b-9e72-2a887048a3e1")
-	)
-	(junction
 		(at 200.66 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3098,10 +3266,6 @@
 	(no_connect
 		(at 138.43 91.44)
 		(uuid "1bd93197-59a5-4957-91a4-8669be23c518")
-	)
-	(no_connect
-		(at 138.43 63.5)
-		(uuid "231695cd-1d5a-4479-aac9-8f1bd19e17d8")
 	)
 	(no_connect
 		(at 138.43 86.36)
@@ -3154,10 +3318,6 @@
 	(no_connect
 		(at 138.43 137.16)
 		(uuid "9fd6cebb-c987-4e67-ab43-1e41e1a9c8d5")
-	)
-	(no_connect
-		(at 138.43 58.42)
-		(uuid "a6907c1f-0c50-4600-889e-af0a4537a489")
 	)
 	(no_connect
 		(at 138.43 104.14)
@@ -3275,6 +3435,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 63.5) (xy 135.89 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1478f20c-3bde-49bc-9ccd-2f6a645f9c32")
+	)
+	(wire
+		(pts
 			(xy 138.43 44.45) (xy 137.16 44.45)
 		)
 		(stroke
@@ -3325,7 +3495,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 45.72) (xy 128.27 44.45)
+			(xy 115.57 46.99) (xy 115.57 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3415,7 +3585,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 54.61) (xy 115.57 53.34)
+			(xy 102.87 55.88) (xy 102.87 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3445,7 +3615,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 25.4) (xy 140.97 24.13)
+			(xy 128.27 25.4) (xy 128.27 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3485,7 +3655,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 34.29) (xy 140.97 33.02)
+			(xy 128.27 34.29) (xy 128.27 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3495,7 +3665,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 44.45) (xy 110.49 24.13)
+			(xy 97.79 44.45) (xy 97.79 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3565,7 +3735,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 34.29) (xy 128.27 33.02)
+			(xy 115.57 34.29) (xy 115.57 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3612,6 +3782,16 @@
 			(type default)
 		)
 		(uuid "6267c529-c6fb-40f0-8668-67a36b96e9e4")
+	)
+	(wire
+		(pts
+			(xy 135.89 63.5) (xy 135.89 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a7f117-5c80-4a65-a025-21f299691a04")
 	)
 	(wire
 		(pts
@@ -3675,16 +3855,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 44.45) (xy 128.27 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78c20170-842d-4bb9-9b80-409e273020e8")
-	)
-	(wire
-		(pts
 			(xy 129.54 124.46) (xy 138.43 124.46)
 		)
 		(stroke
@@ -3692,6 +3862,16 @@
 			(type default)
 		)
 		(uuid "79fd7ccd-6757-4076-af0f-2c0737e03dc2")
+	)
+	(wire
+		(pts
+			(xy 135.89 55.88) (xy 123.19 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aa6ae4b-5c03-4b8d-b765-51cf83674dc7")
 	)
 	(wire
 		(pts
@@ -3755,6 +3935,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 44.45) (xy 102.87 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84202fc4-d249-42c2-99e5-18f4480c2917")
+	)
+	(wire
+		(pts
 			(xy 242.57 52.07) (xy 242.57 49.53)
 		)
 		(stroke
@@ -3785,6 +3975,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 66.04) (xy 123.19 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87dc1e48-e299-4d54-9160-657ae601200e")
+	)
+	(wire
+		(pts
 			(xy 129.54 134.62) (xy 138.43 134.62)
 		)
 		(stroke
@@ -3792,6 +3992,16 @@
 			(type default)
 		)
 		(uuid "8c79aa0f-97d2-4852-8898-b186e9b1b0e8")
+	)
+	(wire
+		(pts
+			(xy 135.89 66.04) (xy 123.19 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90644229-b4e2-4350-898f-eb0aad338e5d")
 	)
 	(wire
 		(pts
@@ -3805,17 +4015,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 44.45) (xy 115.57 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a4677fc-149d-4df1-8277-b58dae505cf6")
-	)
-	(wire
-		(pts
-			(xy 115.57 24.13) (xy 128.27 24.13)
+			(xy 102.87 24.13) (xy 115.57 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3845,7 +4045,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 25.4) (xy 115.57 24.13)
+			(xy 102.87 25.4) (xy 102.87 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3925,7 +4125,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 24.13) (xy 140.97 24.13)
+			(xy 115.57 24.13) (xy 128.27 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4015,13 +4215,23 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 44.45) (xy 137.16 44.45)
+			(xy 123.19 55.88) (xy 123.19 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc223bb4-fc4c-41b4-9cca-bb00215c4d4c")
+		(uuid "bc0ba41f-0ce3-4930-bbb5-c7969c6812bd")
+	)
+	(wire
+		(pts
+			(xy 135.89 58.42) (xy 135.89 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc369627-37a0-40d5-8a29-8e36478c569c")
 	)
 	(wire
 		(pts
@@ -4062,6 +4272,26 @@
 			(type default)
 		)
 		(uuid "c223f345-b220-40b1-ac7b-0c1e043fdb0e")
+	)
+	(wire
+		(pts
+			(xy 115.57 44.45) (xy 137.16 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c46a02ed-6923-4928-b2fc-146be0e95b88")
+	)
+	(wire
+		(pts
+			(xy 102.87 44.45) (xy 115.57 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f66aa6-2689-4f03-ae89-dcef74a4b818")
 	)
 	(wire
 		(pts
@@ -4125,7 +4355,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 54.61) (xy 128.27 53.34)
+			(xy 115.57 55.88) (xy 115.57 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4215,7 +4445,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 24.13) (xy 110.49 22.86)
+			(xy 97.79 24.13) (xy 97.79 22.86)
 		)
 		(stroke
 			(width 0)
@@ -4255,13 +4485,23 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 45.72) (xy 115.57 44.45)
+			(xy 102.87 46.99) (xy 102.87 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e3437e82-30e3-4a9d-9fe7-330604022e23")
+	)
+	(wire
+		(pts
+			(xy 138.43 58.42) (xy 135.89 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e35d1ffb-be7a-4ec0-afd8-3ec269aeec38")
 	)
 	(wire
 		(pts
@@ -4275,7 +4515,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 34.29) (xy 115.57 33.02)
+			(xy 102.87 34.29) (xy 102.87 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4365,7 +4605,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 24.13) (xy 115.57 24.13)
+			(xy 97.79 24.13) (xy 102.87 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4415,7 +4655,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 25.4) (xy 128.27 24.13)
+			(xy 115.57 25.4) (xy 115.57 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4435,7 +4675,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 24.13) (xy 140.97 24.13)
+			(xy 158.75 24.13) (xy 128.27 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4474,6 +4714,16 @@
 			)
 		)
 		(uuid "01772371-58a6-47ff-8f41-cb7c24a3392f")
+	)
+	(text "Single Supply recommended\ndecoupling circuitry"
+		(exclude_from_sim no)
+		(at 52.07 97.282 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "435346e6-cc02-4790-9b25-3e37bed44930")
 	)
 	(text "To Pin32 ONLY\n"
 		(exclude_from_sim no)
@@ -4618,7 +4868,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 115.57 49.53 0)
+		(at 102.87 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4626,8 +4876,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c20525e-a400-4f8e-99cb-2ea3dc5f3c33")
-		(property "Reference" "C11"
-			(at 119.38 48.2599 0)
+		(property "Reference" "C4"
+			(at 106.68 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4636,7 +4886,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 119.38 50.7999 0)
+			(at 106.68 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,7 +4895,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 116.5352 53.34 0)
+			(at 103.8352 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +4904,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10A106KQ8NNNC_Spec.pdf"
-			(at 115.57 49.53 0)
+			(at 102.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,7 +4913,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 115.57 49.53 0)
+			(at 102.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4672,7 +4922,7 @@
 			)
 		)
 		(property "Part" "CL10A106KQ8NNNC"
-			(at 115.57 49.53 0)
+			(at 102.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4681,7 +4931,7 @@
 			)
 		)
 		(property "Voltage" "6.3V"
-			(at 115.57 49.53 0)
+			(at 102.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4690,7 +4940,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 115.57 49.53 0)
+			(at 102.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4707,7 +4957,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C11")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4723,7 +4973,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cca10d2-9af2-4f8c-89ba-2b80db4b2bd9")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR06"
 			(at 247.65 50.8 0)
 			(effects
 				(font
@@ -4773,7 +5023,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR033")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4889,7 +5139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "161baa7b-8c0f-43a0-a240-a8faa85ad659")
-		(property "Reference" "C20"
+		(property "Reference" "C7"
 			(at 233.68 83.8199 0)
 			(effects
 				(font
@@ -4952,7 +5202,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C20")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -4960,7 +5210,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 54.61 0)
+		(at 115.57 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4968,8 +5218,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a418426-111f-47af-b1fb-3baaf4616177")
-		(property "Reference" "#PWR016"
-			(at 128.27 60.96 0)
+		(property "Reference" "#PWR09"
+			(at 115.57 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4978,7 +5228,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 59.69 0)
+			(at 115.57 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,7 +5236,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 54.61 0)
+			(at 115.57 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,7 +5245,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 54.61 0)
+			(at 115.57 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5004,7 +5254,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 54.61 0)
+			(at 115.57 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +5268,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR016")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5026,7 +5276,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 34.29 0)
+		(at 115.57 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5034,8 +5284,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c6e4634-1be2-4c50-ab32-5db97027210f")
-		(property "Reference" "#PWR015"
-			(at 128.27 40.64 0)
+		(property "Reference" "#PWR04"
+			(at 115.57 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5044,7 +5294,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 39.37 0)
+			(at 115.57 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5052,7 +5302,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 34.29 0)
+			(at 115.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5061,7 +5311,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 34.29 0)
+			(at 115.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5070,7 +5320,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 34.29 0)
+			(at 115.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5084,7 +5334,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR015")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5099,7 +5349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1cac1af3-7203-4c02-aa80-a2b171f6a55a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR011"
 			(at 198.12 73.66 0)
 			(effects
 				(font
@@ -5149,7 +5399,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR019")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5165,7 +5415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d4d310f-ece8-424c-b45e-6eabc574dcc6")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR07"
 			(at 242.57 53.34 0)
 			(effects
 				(font
@@ -5215,7 +5465,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR032")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -5231,7 +5481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23ecc29f-5fc9-4416-9e9e-baf4a001c0eb")
-		(property "Reference" "C17"
+		(property "Reference" "C6"
 			(at 214.63 49.5299 0)
 			(effects
 				(font
@@ -5249,7 +5499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 211.7852 54.61 0)
 			(effects
 				(font
@@ -5312,7 +5562,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C17")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5328,7 +5578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "290a31d0-82ee-493a-a681-cdb2cd1811ad")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR02"
 			(at 29.21 27.94 0)
 			(effects
 				(font
@@ -5378,7 +5628,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR029")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5412,7 +5662,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 225.552 124.46 90)
 			(effects
 				(font
@@ -5473,7 +5723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35a5a963-483c-4605-95d1-50946281f9e6")
-		(property "Reference" "C7"
+		(property "Reference" "C10"
 			(at 41.91 109.6009 0)
 			(effects
 				(font
@@ -5491,7 +5741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 39.0652 115.57 0)
 			(effects
 				(font
@@ -5554,7 +5804,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C7")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5569,7 +5819,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c717f30-f4dd-4496-a221-dc5677964d6e")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR013"
 			(at 204.47 91.44 0)
 			(effects
 				(font
@@ -5619,7 +5869,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR022")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5627,7 +5877,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 54.61 0)
+		(at 102.87 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5635,8 +5885,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40666050-e9cc-4cf6-8ccb-847aa757aff0")
-		(property "Reference" "#PWR014"
-			(at 115.57 60.96 0)
+		(property "Reference" "#PWR08"
+			(at 102.87 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5645,7 +5895,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 59.69 0)
+			(at 102.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5653,7 +5903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 54.61 0)
+			(at 102.87 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5662,7 +5912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 54.61 0)
+			(at 102.87 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5671,7 +5921,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 54.61 0)
+			(at 102.87 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5685,7 +5935,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR014")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5701,7 +5951,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44535f21-06ec-4f5a-bd86-f0eee7e6853c")
-		(property "Reference" "C8"
+		(property "Reference" "C13"
 			(at 58.42 133.3499 0)
 			(effects
 				(font
@@ -5719,7 +5969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 55.5752 138.43 0)
 			(effects
 				(font
@@ -5782,7 +6032,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C8")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -5798,7 +6048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46aef73c-ade7-487c-84a7-240636632121")
-		(property "Reference" "C21"
+		(property "Reference" "C8"
 			(at 246.38 83.8199 0)
 			(effects
 				(font
@@ -5861,7 +6111,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C21")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5877,7 +6127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a43ebd8-96ec-4ef4-924b-89d63ef31a89")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 223.52 74.93 90)
 			(effects
 				(font
@@ -5938,7 +6188,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -5946,7 +6196,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 128.27 49.53 0)
+		(at 115.57 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5954,8 +6204,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51cc931a-3301-473f-814b-b1f261d0577f")
-		(property "Reference" "C13"
-			(at 132.08 48.2599 0)
+		(property "Reference" "C5"
+			(at 119.38 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,7 +6214,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 132.08 50.7999 0)
+			(at 119.38 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5972,8 +6222,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 129.2352 53.34 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 116.5352 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5982,7 +6232,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
-			(at 128.27 49.53 0)
+			(at 115.57 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5991,7 +6241,7 @@
 			)
 		)
 		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
-			(at 128.27 49.53 0)
+			(at 115.57 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6000,7 +6250,7 @@
 			)
 		)
 		(property "Part" "CL10B104KB8NNNC"
-			(at 128.27 49.53 0)
+			(at 115.57 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6009,7 +6259,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 128.27 49.53 0)
+			(at 115.57 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6018,7 +6268,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 128.27 49.53 0)
+			(at 115.57 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6035,7 +6285,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C13")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6051,7 +6301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "544e6cda-4d25-4ab5-919e-1b00c677994d")
-		(property "Reference" "L3"
+		(property "Reference" "L2"
 			(at 236.22 74.93 90)
 			(effects
 				(font
@@ -6112,7 +6362,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "L3")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -6144,7 +6394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 29.21 108.458 90)
 			(effects
 				(font
@@ -6205,7 +6455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d1ab753-938b-424d-bdea-5d5a562c4b27")
-		(property "Reference" "C19"
+		(property "Reference" "C16"
 			(at 231.14 144.7799 0)
 			(effects
 				(font
@@ -6223,7 +6473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 228.2952 149.86 0)
 			(effects
 				(font
@@ -6286,7 +6536,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C19")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -6302,7 +6552,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6408e79b-7c0c-4e1b-a647-1d2d6ef47fe3")
-		(property "Reference" "L1"
+		(property "Reference" "L4"
 			(at 208.28 105.4099 0)
 			(effects
 				(font
@@ -6383,7 +6633,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "L1")
+					(reference "L4")
 					(unit 1)
 				)
 			)
@@ -6399,7 +6649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6804c0d5-ca1d-4355-baa4-f6406e19374c")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR016"
 			(at 19.05 109.22 0)
 			(effects
 				(font
@@ -6449,7 +6699,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR031")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6457,7 +6707,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 110.49 22.86 0)
+		(at 97.79 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6465,8 +6715,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6aa5dce2-c52f-4fc4-9ee6-d3d055195d5a")
-		(property "Reference" "#PWR030"
-			(at 110.49 26.67 0)
+		(property "Reference" "#PWR01"
+			(at 97.79 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6475,7 +6725,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 110.49 17.78 0)
+			(at 97.79 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,7 +6733,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 22.86 0)
+			(at 97.79 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6492,7 +6742,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 22.86 0)
+			(at 97.79 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6501,7 +6751,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 110.49 22.86 0)
+			(at 97.79 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6515,7 +6765,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR030")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -6531,7 +6781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b5318b3-8ab6-49ec-9586-35a9069e47a8")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR022"
 			(at 203.2 157.48 0)
 			(effects
 				(font
@@ -6581,7 +6831,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR021")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6597,7 +6847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71cabb47-7ca5-479f-ab2a-5ce98beb5f67")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR024"
 			(at 227.33 157.48 0)
 			(effects
 				(font
@@ -6647,7 +6897,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR026")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -6662,7 +6912,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75db2482-4f76-424d-9daf-780f4cf85c7e")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 215.9 40.386 90)
 			(effects
 				(font
@@ -6678,7 +6928,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 216.154 44.704 90)
 			(effects
 				(font
@@ -6741,7 +6991,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -6757,7 +7007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7abc2e0c-e115-4338-ac9d-576f43955cc1")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR021"
 			(at 66.04 146.05 0)
 			(effects
 				(font
@@ -6807,7 +7057,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR012")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6823,7 +7073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b4d827c-6d6b-41f4-944c-1f45ed9ca0a3")
-		(property "Reference" "C18"
+		(property "Reference" "C15"
 			(at 218.44 144.7799 0)
 			(effects
 				(font
@@ -6841,7 +7091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 215.5952 149.86 0)
 			(effects
 				(font
@@ -6904,7 +7154,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C18")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -6920,7 +7170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "830a945f-f4e7-4ebc-bc2e-e093ab4e3c33")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR017"
 			(at 38.1 123.19 0)
 			(effects
 				(font
@@ -6970,7 +7220,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR09")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6978,7 +7228,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 34.29 0)
+		(at 102.87 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6986,8 +7236,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "830d8cd5-aa7c-4ffe-bd73-30a152b19a52")
-		(property "Reference" "#PWR013"
-			(at 115.57 40.64 0)
+		(property "Reference" "#PWR03"
+			(at 102.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6996,7 +7246,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 39.37 0)
+			(at 102.87 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7004,7 +7254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 34.29 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7013,7 +7263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 34.29 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7022,7 +7272,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 34.29 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7036,7 +7286,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR013")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7052,7 +7302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8733a3b8-a8ad-40b4-b9f4-778f53f13a72")
-		(property "Reference" "C16"
+		(property "Reference" "C14"
 			(at 207.01 144.7799 0)
 			(effects
 				(font
@@ -7070,7 +7320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 204.1652 149.86 0)
 			(effects
 				(font
@@ -7133,7 +7383,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C16")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -7149,7 +7399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88e20c2d-6608-4c95-a399-5976ed29e033")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR015"
 			(at 242.57 100.33 0)
 			(effects
 				(font
@@ -7199,104 +7449,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 140.97 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c3c6c94-bc51-4581-be24-1656e9cc1001")
-		(property "Reference" "C14"
-			(at 144.78 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 144.78 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 141.9352 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
-			(at 140.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
-			(at 140.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "CL10B104KB8NNNC"
-			(at 140.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "50V"
-			(at 140.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 140.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "372bd92c-5d68-4e32-88fd-bb77e00e3942")
-		)
-		(pin "2"
-			(uuid "f192f5eb-8a0d-490d-b6c7-273e943ad220")
-		)
-		(instances
-			(project "earworm_hardware"
-				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C14")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7311,8 +7464,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "aacd009b-445f-4d4c-b2c0-39462244ef37")
-		(property "Reference" "C12"
+		(uuid "8c3c6c94-bc51-4581-be24-1656e9cc1001")
+		(property "Reference" "C3"
 			(at 132.08 27.9399 0)
 			(effects
 				(font
@@ -7330,7 +7483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 129.2352 33.02 0)
 			(effects
 				(font
@@ -7385,6 +7538,103 @@
 			)
 		)
 		(pin "1"
+			(uuid "372bd92c-5d68-4e32-88fd-bb77e00e3942")
+		)
+		(pin "2"
+			(uuid "f192f5eb-8a0d-490d-b6c7-273e943ad220")
+		)
+		(instances
+			(project "earworm_hardware"
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 115.57 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aacd009b-445f-4d4c-b2c0-39462244ef37")
+		(property "Reference" "C2"
+			(at 119.38 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 119.38 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 116.5352 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CL10B104KB8NNNC"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
 			(uuid "8f8e3d96-6142-4239-86aa-d883ca54daa7")
 		)
 		(pin "2"
@@ -7393,7 +7643,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C12")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -7408,7 +7658,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b60479e6-c036-41a9-923b-95d531d8ee9d")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR012"
 			(at 210.82 73.66 0)
 			(effects
 				(font
@@ -7458,7 +7708,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR024")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7671,7 +7921,7 @@
 					(unit 1)
 				)
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7687,7 +7937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bad963ff-3250-49d6-9b1b-c16a5485ef16")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR019"
 			(at 200.66 132.08 0)
 			(effects
 				(font
@@ -7737,7 +7987,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR020")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -7753,7 +8003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc148c22-cb1b-408f-a0ca-3b9d16770841")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR023"
 			(at 214.63 157.48 0)
 			(effects
 				(font
@@ -7803,7 +8053,95 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR025")
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal")
+		(at 123.19 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c866d808-fd70-4964-8e52-8ee7770a39a5")
+		(property "Reference" "X1"
+			(at 127 59.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "32.768 kHz"
+			(at 127 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "earworm:Crystal_SMD_ECS_2012-2Pin_2.0x1.2mm"
+			(at 123.19 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECX-12R.pdf"
+			(at 123.19 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "https://www.digikey.com/en/products/detail/ecs-inc/ECS-327-9-12R-TR/8593601"
+			(at 123.19 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ECS-.327-9-12R-TR"
+			(at 123.19 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20ppm"
+			(at 123.19 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c88b6a0-dee7-4ff4-9441-95dcf9a8893b")
+		)
+		(pin "1"
+			(uuid "08dbf52e-d3a9-4b9c-9fe8-5b679a27652d")
+		)
+		(instances
+			(project ""
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -7819,7 +8157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9c02ca8-2853-42f4-bcd9-6e5cfaa35f5f")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR018"
 			(at 63.5 123.19 0)
 			(effects
 				(font
@@ -7869,7 +8207,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR011")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7885,7 +8223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbae4dd3-e4e4-477c-977e-018af6fa1174")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR014"
 			(at 255.27 96.52 0)
 			(effects
 				(font
@@ -7935,7 +8273,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR028")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7951,7 +8289,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2f3b303-0863-4725-bb20-8d03458cf183")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 67.31 110.4899 0)
 			(effects
 				(font
@@ -7969,7 +8307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 64.4652 115.57 0)
 			(effects
 				(font
@@ -8032,7 +8370,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -8040,7 +8378,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.97 34.29 0)
+		(at 128.27 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8048,8 +8386,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e93ab86d-79c2-449f-a960-54dc49212f9b")
-		(property "Reference" "#PWR017"
-			(at 140.97 40.64 0)
+		(property "Reference" "#PWR05"
+			(at 128.27 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8058,7 +8396,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 39.37 0)
+			(at 128.27 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8066,7 +8404,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 34.29 0)
+			(at 128.27 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8075,7 +8413,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 34.29 0)
+			(at 128.27 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8084,7 +8422,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 34.29 0)
+			(at 128.27 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8098,7 +8436,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR017")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -8106,7 +8444,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 115.57 29.21 0)
+		(at 102.87 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8114,8 +8452,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e985577e-d2ca-4b65-850f-533decbece9a")
-		(property "Reference" "C10"
-			(at 119.38 27.9399 0)
+		(property "Reference" "C1"
+			(at 106.68 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8124,7 +8462,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 119.38 30.4799 0)
+			(at 106.68 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8132,8 +8470,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 116.5352 33.02 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 103.8352 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8142,7 +8480,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
-			(at 115.57 29.21 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,7 +8489,7 @@
 			)
 		)
 		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
-			(at 115.57 29.21 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8160,7 +8498,7 @@
 			)
 		)
 		(property "Part" "CL10B104KB8NNNC"
-			(at 115.57 29.21 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8169,7 +8507,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 115.57 29.21 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8178,7 +8516,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 115.57 29.21 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8195,7 +8533,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C10")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -8211,7 +8549,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f349c17a-973b-4151-bc83-014def52afae")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 259.08 53.3399 0)
 			(effects
 				(font
@@ -8274,7 +8612,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8289,7 +8627,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5a567aa-de0c-4a4f-afc4-6231f2904b80")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 52.07 101.092 90)
 			(effects
 				(font
@@ -8305,7 +8643,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 52.324 105.664 90)
 			(effects
 				(font
@@ -8368,7 +8706,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8383,7 +8721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5ab0d86-baa0-479f-91b6-260ca04adff8")
-		(property "Reference" "X1"
+		(property "Reference" "X2"
 			(at 214.884 63.754 90)
 			(effects
 				(font
@@ -8468,7 +8806,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "X1")
+					(reference "X2")
 					(unit 1)
 				)
 			)
@@ -8484,7 +8822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6c0ca4c-489c-485b-8572-23c2f22eda74")
-		(property "Reference" "C15"
+		(property "Reference" "C12"
 			(at 204.47 119.3799 0)
 			(effects
 				(font
@@ -8502,7 +8840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 201.6252 124.46 0)
 			(effects
 				(font
@@ -8565,7 +8903,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C15")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -8581,7 +8919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7672d63-638b-45c6-835f-88fa636a1828")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR020"
 			(at 54.61 146.05 0)
 			(effects
 				(font
@@ -8631,7 +8969,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR010")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8647,7 +8985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9d11528-d3bf-470c-914b-ef9dab32f149")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR025"
 			(at 165.1 163.83 0)
 			(effects
 				(font
@@ -8697,7 +9035,7 @@
 		(instances
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR018")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -8713,7 +9051,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fab16352-cd43-4426-ad50-50b91f27ed3e")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR010"
 			(at 210.82 62.23 0)
 			(effects
 				(font
@@ -8763,7 +9101,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "#PWR023")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8779,7 +9117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fada8c26-f7f8-41eb-9616-7898ac10a7a6")
-		(property "Reference" "L4"
+		(property "Reference" "L3"
 			(at 248.92 74.93 90)
 			(effects
 				(font
@@ -8840,7 +9178,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "L4")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -8856,7 +9194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fcdc3850-fb84-4e32-8fce-cb8316f07b57")
-		(property "Reference" "C22"
+		(property "Reference" "C9"
 			(at 259.08 83.8199 0)
 			(effects
 				(font
@@ -8919,7 +9257,7 @@
 		(instances
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
-					(reference "C22")
+					(reference "C9")
 					(unit 1)
 				)
 			)

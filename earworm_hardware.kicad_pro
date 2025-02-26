@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -173,7 +179,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -200,7 +209,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.2
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -584,12 +602,12 @@
       "Root"
     ],
     [
-      "752b2b17-d4ef-44d5-a644-06ce1b2ff905",
-      "Thermal Energy Harvesting Chain"
-    ],
-    [
       "775ed5aa-f2a7-4007-b181-21772bd09852",
       "nRF54L15 RFSoC"
+    ],
+    [
+      "752b2b17-d4ef-44d5-a644-06ce1b2ff905",
+      "Thermal Energy Harvesting Chain"
     ]
   ],
   "text_variables": {}
