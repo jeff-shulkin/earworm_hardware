@@ -3895,7 +3895,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 25.4) (xy 29.21 25.4)
+			(xy 54.61 40.64) (xy 55.88 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4545,7 +4545,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 25.4) (xy 29.21 24.13)
+			(xy 55.88 40.64) (xy 55.88 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4757,7 +4757,7 @@
 	)
 	(text "nRF Schematic From: https://docs.nordicsemi.com/bundle/ps_nrf54L15/page/chapters/ref_circuitry.html"
 		(exclude_from_sim no)
-		(at 231.902 14.224 0)
+		(at 231.902 7.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4856,7 +4856,7 @@
 	)
 	(hierarchical_label "LTC_PWR"
 		(shape input)
-		(at 27.94 25.4 180)
+		(at 54.61 40.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5570,7 +5570,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 29.21 24.13 0)
+		(at 55.88 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5579,7 +5579,7 @@
 		(fields_autoplaced yes)
 		(uuid "290a31d0-82ee-493a-a681-cdb2cd1811ad")
 		(property "Reference" "#PWR02"
-			(at 29.21 27.94 0)
+			(at 55.88 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5588,7 +5588,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 29.21 19.05 0)
+			(at 55.88 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5596,7 +5596,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 24.13 0)
+			(at 55.88 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5605,7 +5605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 24.13 0)
+			(at 55.88 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +5614,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 29.21 24.13 0)
+			(at 55.88 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
