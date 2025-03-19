@@ -1,0 +1,19 @@
++1ns        3.0mA    ; Start at 3.0mA
++13us       3.0mA    ; Hold steady before drop
++0.0001us   1.3mA    ; Instantaneous transition
++380us      1.3mA    ; Hold steady
++0.0001us   0.8mA    ; Instantaneous transition
++500us      0.8mA    ; Hold steady
++0.001us    3.1mA    ; Instantaneous transition
++100us      3.1mA    ; Hold steady
++0.001us    4.2mA    ; Instantaneous transition
++190us      4.2mA    ; Hold steady
++0.0001us   2.5mA    ; Instantaneous transition
++140us      2.5mA    ; Hold steady
++0.0001us   6.4mA    ; Instantaneous transition
++1044us     6.4mA    ; Hold steady
++0.0001us   1.6mA    ; Instantaneous transition
++128us      1.6mA    ; Hold steady
++0.0001us   3.2uA    ; Enter idle mode
++2s         3.2uA    ; Maintain idle until repeat
++0.0001s    3.0mA    ; Sharp restart, mimicking a square wave

@@ -814,7 +814,7 @@ X1 A K G SCR_ST params:
 + Vdrm=100v     
 + Igt=0.001ma
 + Ih=5ma        
-+ Rt=0.6
++ Rt=0.2
 * 2008 / ST / Rev 0
 .ends
 *$
