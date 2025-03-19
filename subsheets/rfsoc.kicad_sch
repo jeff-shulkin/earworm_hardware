@@ -1249,6 +1249,127 @@
 				)
 			)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers hide)
 			(pin_names
@@ -3236,6 +3357,12 @@
 		(uuid "e45b3851-b49b-44c7-a8d9-f701aac177aa")
 	)
 	(junction
+		(at 266.7 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef05afa5-f3a9-4f7b-a24d-424924b1ab78")
+	)
+	(junction
 		(at 57.15 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3395,7 +3522,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 80.01) (xy 267.97 80.01)
+			(xy 255.27 80.01) (xy 266.7 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3612,6 +3739,16 @@
 			(type default)
 		)
 		(uuid "3efda24a-a461-4fc3-a3a8-c7a1f2f2284a")
+	)
+	(wire
+		(pts
+			(xy 266.7 87.63) (xy 266.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f36a619-a492-47a1-8927-6535eccc646b")
 	)
 	(wire
 		(pts
@@ -3942,6 +4079,16 @@
 			(type default)
 		)
 		(uuid "84202fc4-d249-42c2-99e5-18f4480c2917")
+	)
+	(wire
+		(pts
+			(xy 266.7 80.01) (xy 266.7 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8511b1ca-0cc0-4786-afca-0f7816268a75")
 	)
 	(wire
 		(pts
@@ -4452,6 +4599,16 @@
 			(type default)
 		)
 		(uuid "d9ff897a-0988-4c9a-8c26-35be7d1ac6a5")
+	)
+	(wire
+		(pts
+			(xy 266.7 80.01) (xy 267.97 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da65e73f-b36a-41f8-bb94-3b6ebcc5b263")
 	)
 	(wire
 		(pts
@@ -5870,6 +6027,76 @@
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 266.7 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f6ca453-446d-4b32-a23a-651c218b4149")
+		(property "Reference" "NT1"
+			(at 267.97 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 267.97 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "earworm:NetTie-2_SMD_Pad0.33mm"
+			(at 266.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 266.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47427b20-e7c5-4aeb-a500-56bfadff4302")
+		)
+		(pin "1"
+			(uuid "aa9ad0d2-ba88-4a2a-aff2-55430fa6d5ae")
+		)
+		(instances
+			(project ""
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "NT1")
 					(unit 1)
 				)
 			)
@@ -7547,6 +7774,72 @@
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9be2ca90-1352-4db4-b16b-56bbcd57d265")
+		(property "Reference" "#PWR034"
+			(at 266.7 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "767d19dc-117f-40bc-8479-7161adbde721")
+		)
+		(instances
+			(project "earworm_hardware"
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
