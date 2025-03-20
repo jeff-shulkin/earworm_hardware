@@ -5,6 +5,173 @@
 	(uuid "202c21b7-9146-475e-91c1-a43f436cb558")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(arc
+					(start -1.778 -0.508)
+					(mid 0.2311 -1.8066)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.2099 1.8101)
+					(end -1.778 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
 			(pin_names
@@ -3345,6 +3512,12 @@
 		(uuid "1b08b1bf-1ea9-4cd3-b302-03e751b93ea8")
 	)
 	(junction
+		(at 261.62 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c99ca03-e37c-407d-967a-387614a9c4c5")
+	)
+	(junction
 		(at 207.01 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3588,6 +3761,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 80.01) (xy 266.7 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f24d10-77c8-4d72-9e07-8032a30a797f")
+	)
+	(wire
+		(pts
 			(xy 137.16 48.26) (xy 137.16 44.45)
 		)
 		(stroke
@@ -3618,7 +3801,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 80.01) (xy 266.7 80.01)
+			(xy 255.27 80.01) (xy 261.62 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4818,6 +5001,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 76.2) (xy 261.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3597a09-218d-4943-8206-557718e64032")
+	)
+	(wire
+		(pts
 			(xy 138.43 58.42) (xy 135.89 58.42)
 		)
 		(stroke
@@ -5027,7 +5220,7 @@
 		(uuid "ff79ef4b-d92d-4d71-8a10-3def40f04754")
 	)
 	(rectangle
-		(start 215.9 72.39)
+		(start 215.9 62.23)
 		(end 274.32 102.87)
 		(stroke
 			(width 0)
@@ -5236,7 +5429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10A106KQ8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106MA73-01.pdf"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -5245,7 +5438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73D/3900497"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -5254,7 +5447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10A106KQ8NNNC"
+		(property "Part" "GRM188R61E106MA73D"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -5263,7 +5456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "6.3V"
+		(property "Voltage" "25V"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -5272,7 +5465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "20%"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -5841,7 +6034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL10C040CB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H4R0BB01-01.pdf"
 			(at 210.82 50.8 0)
 			(effects
 				(font
@@ -5850,7 +6043,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10C040CB8NNNC/3887447"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GJM1555C1H4R0BB01D/2592981"
 			(at 210.82 50.8 0)
 			(effects
 				(font
@@ -5859,7 +6052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10C040CB8NNNC"
+		(property "Part" "GJM1555C1H4R0BB01D"
 			(at 210.82 50.8 0)
 			(effects
 				(font
@@ -5868,7 +6061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "6.25%"
+		(property "Tolerance" "2.5%"
 			(at 210.82 50.8 0)
 			(effects
 				(font
@@ -6070,7 +6263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/products/productdata/8796738650142/ENFA0003.pdf"
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdata/8796740059166/ENFA0018.pdf"
 			(at 227.33 124.46 0)
 			(effects
 				(font
@@ -6079,7 +6272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/BLM18KG121TN1D/1982762"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PX121SN1D/4421095"
 			(at 227.33 124.46 0)
 			(effects
 				(font
@@ -6088,7 +6281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "BLM18KG121TN1D"
+		(property "Part" "BLM15PX121SN1D"
 			(at 227.33 124.46 0)
 			(effects
 				(font
@@ -6140,7 +6333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 39.0652 115.57 0)
 			(effects
 				(font
@@ -6149,7 +6342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/TAC.pdf"
 			(at 38.1 111.76 0)
 			(effects
 				(font
@@ -6158,7 +6351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "https://www.digikey.com/en/products/detail/kyocera-avx/TACL105K016RTA/1469191?s=N4IgTCBcDaICoEEDCAZAjABgKwGkNoDYAlREAXQF8g"
 			(at 38.1 111.76 0)
 			(effects
 				(font
@@ -6186,6 +6379,15 @@
 			)
 		)
 		(property "Tolerance" "10%"
+			(at 38.1 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ESR" "7.5"
 			(at 38.1 111.76 0)
 			(effects
 				(font
@@ -6269,6 +6471,75 @@
 			(project ""
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 261.62 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ec55a7e-9460-4302-92d9-bbcb64b3acb2")
+		(property "Reference" "J3"
+			(at 261.9132 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 261.9132 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical"
+			(at 261.62 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/132134-10.PDF"
+			(at 261.62 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "https://www.digikey.com/en/products/detail/amphenol-rf/132134-10/3125418"
+			(at 261.62 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67e3ad4f-989b-4497-a161-3c335f6762e3")
+		)
+		(pin "1"
+			(uuid "68206f88-d828-4679-9b30-31e8a23dbbd0")
+		)
+		(instances
+			(project ""
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -6447,7 +6718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/920/CL10B224KO8NNNC_Spec.pdf"
+		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCM155R71C224KE02%23"
 			(at 54.61 134.62 0)
 			(effects
 				(font
@@ -6456,7 +6727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B224KO8NNNC/3886770"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GCM155R71C224KE02D/4903702"
 			(at 54.61 134.62 0)
 			(effects
 				(font
@@ -6465,7 +6736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B224KO8NNNC"
+		(property "Part" "GCM155R71C224KE02D"
 			(at 54.61 134.62 0)
 			(effects
 				(font
@@ -6474,7 +6745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "Voltage" "25V"
 			(at 54.61 134.62 0)
 			(effects
 				(font
@@ -6700,7 +6971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 115.57 50.8 0)
 			(effects
 				(font
@@ -6727,7 +6998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "16V"
 			(at 115.57 50.8 0)
 			(effects
 				(font
@@ -6872,7 +7143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf"
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdata/8796740059166/ENFA0018.pdf"
 			(at 29.21 106.68 0)
 			(effects
 				(font
@@ -6881,7 +7152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/BLM18BA750SN1D/584229"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/BLM15BX750SN1D/4421094"
 			(at 29.21 106.68 0)
 			(effects
 				(font
@@ -6890,7 +7161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "BLM18BA750SN1D"
+		(property "Part" "BLM15BX750SN1D"
 			(at 29.21 106.68 0)
 			(effects
 				(font
@@ -6951,7 +7222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/421/CL10A225KO8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E225ME15-01.pdf"
 			(at 227.33 146.05 0)
 			(effects
 				(font
@@ -6960,7 +7231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A225KO8NNNC/3886698"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R61E225ME15D/5027542"
 			(at 227.33 146.05 0)
 			(effects
 				(font
@@ -6969,7 +7240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10A225KO8NNNC"
+		(property "Part" "GRM155R61E225ME15D"
 			(at 227.33 146.05 0)
 			(effects
 				(font
@@ -6978,7 +7249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "20%"
 			(at 227.33 146.05 0)
 			(effects
 				(font
@@ -7006,6 +7277,72 @@
 			(project "earworm_hardware"
 				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f04eccf-0a25-488f-9443-99ec252e53a5")
+		(property "Reference" "#PWR035"
+			(at 266.7 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4814780b-9a75-4103-9bf9-3d604b76649a")
+		)
+		(instances
+			(project "earworm_hardware"
+				(path "/881910d0-5a86-41d0-856d-d1bf2648669f/775ed5aa-f2a7-4007-b181-21772bd09852"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -7406,7 +7743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 215.9 45.72 0)
 			(effects
 				(font
@@ -7415,7 +7752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1001X/79729"
 			(at 215.9 45.72 0)
 			(effects
 				(font
@@ -7424,7 +7761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "ERJ-3EKF1001V"
+		(property "Part" "ERJ-2RKF1001X"
 			(at 215.9 45.72 90)
 			(effects
 				(font
@@ -7569,7 +7906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B103KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71E103KA01-01.pdf"
 			(at 214.63 146.05 0)
 			(effects
 				(font
@@ -7578,7 +7915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B103KB8NNNC/3886667"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71E103KA01J/2610907"
 			(at 214.63 146.05 0)
 			(effects
 				(font
@@ -7587,7 +7924,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B103KB8NNNC"
+		(property "Part" "GRM155R71E103KA01J"
 			(at 214.63 146.05 0)
 			(effects
 				(font
@@ -7798,7 +8135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B103KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H103KA37-01.pdf"
 			(at 203.2 146.05 0)
 			(effects
 				(font
@@ -7807,7 +8144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B103KB8NNNC/3886667"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GCM188R71H103KA37D/1641652"
 			(at 203.2 146.05 0)
 			(effects
 				(font
@@ -7816,7 +8153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B103KB8NNNC"
+		(property "Part" "GRM155R71E103KA01J"
 			(at 203.2 146.05 0)
 			(effects
 				(font
@@ -7961,7 +8298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -7970,7 +8307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -7979,7 +8316,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B104KB8NNNC"
+		(property "Part" "GCM155R71C104KA55J"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -7988,7 +8325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "16V"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -8256,7 +8593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 115.57 29.21 0)
 			(effects
 				(font
@@ -8265,7 +8602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
 			(at 115.57 29.21 0)
 			(effects
 				(font
@@ -8274,7 +8611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B104KB8NNNC"
+		(property "Part" "GCM155R71C104KA55J"
 			(at 115.57 29.21 0)
 			(effects
 				(font
@@ -8283,7 +8620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "16V"
 			(at 115.57 29.21 0)
 			(effects
 				(font
@@ -8983,7 +9320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 63.5 111.76 0)
 			(effects
 				(font
@@ -8992,7 +9329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
 			(at 63.5 111.76 0)
 			(effects
 				(font
@@ -9001,7 +9338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B104KB8NNNC"
+		(property "Part" "GCM155R71C104KA55J"
 			(at 63.5 111.76 0)
 			(effects
 				(font
@@ -9010,7 +9347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "16V"
 			(at 63.5 111.76 0)
 			(effects
 				(font
@@ -9146,7 +9483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 102.87 29.21 0)
 			(effects
 				(font
@@ -9155,7 +9492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
 			(at 102.87 29.21 0)
 			(effects
 				(font
@@ -9164,7 +9501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B104KB8NNNC"
+		(property "Part" "GCM155R71C104KA55J"
 			(at 102.87 29.21 0)
 			(effects
 				(font
@@ -9173,7 +9510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "16V"
 			(at 102.87 29.21 0)
 			(effects
 				(font
@@ -9319,7 +9656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 52.07 106.68 0)
 			(effects
 				(font
@@ -9328,7 +9665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF10R0X/192072"
 			(at 52.07 106.68 0)
 			(effects
 				(font
@@ -9516,7 +9853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/421/CL10A225KO8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E225ME15-01.pdf"
 			(at 200.66 120.65 0)
 			(effects
 				(font
@@ -9525,7 +9862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A225KO8NNNC/3886698"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R61E225ME15D/5027542"
 			(at 200.66 120.65 0)
 			(effects
 				(font
@@ -9534,7 +9871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10A225KO8NNNC"
+		(property "Part" "GRM155R61E225ME15D"
 			(at 200.66 120.65 0)
 			(effects
 				(font
@@ -9543,7 +9880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "20%"
 			(at 200.66 120.65 0)
 			(effects
 				(font

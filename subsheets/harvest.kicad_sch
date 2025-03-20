@@ -2225,7 +2225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X"
 			(at 80.01 97.79 0)
 			(effects
 				(font
@@ -2234,8 +2234,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2GE0R00X/146727"
 			(at 80.01 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ERJ-2GE0R00X"
+			(at 80.01 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,7 +2302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X"
 			(at 80.01 110.49 0)
 			(effects
 				(font
@@ -2302,8 +2311,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2GE0R00X/146727"
 			(at 80.01 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ERJ-2GE0R00X"
+			(at 80.01 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2361,7 +2379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B102KB8NNNC_Spec.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H102JA01-01.pdf"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -2370,7 +2388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B102KB8NNNC/3886676"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H102JA01D/702509"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -2379,7 +2397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B102KB8NNNC"
+		(property "Part" "GRM1555C1H102JA01D"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -2397,7 +2415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "5%"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -2528,7 +2546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X"
 			(at 97.79 120.65 0)
 			(effects
 				(font
@@ -2537,7 +2555,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2GE0R00X/146727"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ERJ-2GE0R00X"
 			(at 97.79 120.65 0)
 			(effects
 				(font
@@ -2586,7 +2613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 97.79 82.8548 0)
 			(effects
 				(font
@@ -2595,7 +2622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10C331JB8NNN"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H331JA01-01.pdf"
 			(at 93.98 83.82 0)
 			(effects
 				(font
@@ -2604,7 +2631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10C331JB8NNNC/3886731"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H331JA01D/587206"
 			(at 93.98 83.82 0)
 			(effects
 				(font
@@ -2613,7 +2640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10C331JB8NNNC"
+		(property "Part" "GRM1555C1H331JA01D"
 			(at 93.98 83.82 0)
 			(effects
 				(font
@@ -2692,7 +2719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X"
 			(at 87.63 120.65 0)
 			(effects
 				(font
@@ -2701,7 +2728,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2GE0R00X/146727"
+			(at 87.63 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ERJ-2GE0R00X"
 			(at 87.63 120.65 0)
 			(effects
 				(font
@@ -2743,7 +2779,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "500k"
+		(property "Value" "499k"
 			(at 82.55 78.7399 0)
 			(effects
 				(font
@@ -2761,7 +2797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 80.01 77.47 0)
 			(effects
 				(font
@@ -2770,7 +2806,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF4993X/192385"
+			(at 80.01 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ERJ-2RKF4993X"
+			(at 80.01 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 80.01 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "0.1W"
 			(at 80.01 77.47 0)
 			(effects
 				(font
@@ -3379,7 +3442,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 120.3452 137.16 0)
 			(effects
 				(font
@@ -3397,7 +3460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KP8NNNC/3887604"
+		(property "Description" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R61E105MA12D/4905141"
 			(at 119.38 133.35 0)
 			(effects
 				(font
@@ -3406,7 +3469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL10B105KP8NNNC"
+		(property "Part" "GRM155R61E105MA12D"
 			(at 119.38 133.35 0)
 			(effects
 				(font
@@ -3415,7 +3478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25V"
 			(at 119.38 133.35 0)
 			(effects
 				(font
@@ -3424,7 +3487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "20%"
 			(at 119.38 133.35 0)
 			(effects
 				(font
@@ -3775,7 +3838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X"
 			(at 172.72 99.06 0)
 			(effects
 				(font
@@ -3784,8 +3847,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2GE0R00X/146727"
 			(at 172.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "ERJ-2GE0R00X"
+			(at 172.72 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
